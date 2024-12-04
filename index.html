@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Pokémon Search</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="birthdays.html">Pokémon Birthdays</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="calendar.html">Pokemon Calender</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Search Section -->
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search Pokémon">
+      <button id="searchButton">Search</button>
+      <select id="regionSelect">
+        <option value="">Select Region</option>
+      </select>
+    </div>
+
+    <!-- Pokémon Display Section -->
+    <section id="pokemonDisplay"></section>
+
+    <!-- Region Pokémon Display Section -->
+    <section id="regionDisplay"></section>
+
+    <!-- Most Liked Pokémon -->
+    <section id="mostLikedContainer">
+      <h2>Most Liked Pokémon</h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pokémon App</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

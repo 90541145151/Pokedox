@@ -1,0 +1,365 @@
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f6fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #ff00aa, #ff00ee);
+    color: white;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, #ff00ee, #ff00aa);
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ==============================
+   Buttons and Inputs
+   ============================== */
+input, button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff00aa;
+    color: #fff;
+}
+
+input {
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* ==============================
+   Pokémon Card Styles
+   ============================== */
+.pokemon-card {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #ff00aa;
+    border-radius: 10px;
+    padding: 1rem;
+    background: white;
+    max-width: 300px;
+    margin: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon-card img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+}
+
+/* ==============================
+   About Page Styles
+   ============================== */
+.section {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #ff00aa;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #555;
+}
+
+.section ul {
+    list-style: disc inside;
+    margin: 1rem 0;
+}
+
+.section ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.section ul li strong {
+    color: #ff00aa;
+}
+
+/* ==============================
+   Birthday Section
+   ============================== */
+#pokemonBirthdays {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem auto;
+}
+
+
+.birthday-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.birthday-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.birthday-card h3 {
+    font-size: 1.2rem;
+    color: #ff00aa;
+}
+
+/* ==============================
+   Responsive Design
+   ============================== */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .pokemon-card {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+/* ==============================
+   About Page Styles
+   ============================== */
+   .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 2rem;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    flex: 2 1 600px;
+    text-align: left;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: #ff00aa;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-content ul {
+    list-style: disc inside;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+.about-content ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.about-content ul li strong {
+    color: #ff00aa;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about-image, .about-content {
+        flex: 1 1 100%;
+    }
+
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ==============================
+   Calendar Section
+   ============================== */
+   .calendar-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcade2;
+    color: white;
+    padding: 1rem;
+}
+
+.calendar-header button {
+    background: white;
+    border: none;
+    color: #ff00aa;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-header button:hover {
+    background: #ffaae3;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #ddd;
+}
+
+.calendar-day {
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.calendar-day h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.calendar-day .pokemon-event {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ee89db;
+    background-color: #f9f0fa;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.calendar-day img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* Responsive Calendar Design */
+@media (max-width: 768px) {
+    .calendar-days {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-days {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
